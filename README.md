@@ -1,22 +1,23 @@
 # upgrade-review-basics
 **Iteración #1: Mix for e includes**
 
-Dado el siguiente javascript usa forof para recorrer el array de películas, genera un nuevo array con las categorías de las películas e imprime por consola el array de categorías. Ten en cuenta que las categorías no deberían repetirse. Para filtrar las categorías puedes ayudarte de la función `.includes()`
+Dado el siguiente javascript usa forof para recorrer el array de películas, genera un nuevo array con las categorías de las películas e imprime por consola el array de categorías. Ten en cuenta que las categorías no deberían repetirse. Para filtrar las categorías puedes ayudarte de la función **.includes()**
 
 ```jsx
-  const movies = [
-      {title: 'Madaraspar', duration: 192, categories: ['comedia', 'aventura']},
-      {title: 'Spiderpan', duration: 122, categories: ['aventura', 'acción']},
-      {title: 'Solo en Whatsapp', duration: 223, categories: ['comedia', 'thriller']},
-      {title: 'El gato con guantes', duration: 111, categories: ['comedia', 'aventura', 'animación']},
-  ]```
+const movies = [
+    {title: 'Madaraspar', duration: 192, categories: ['comedia', 'aventura']},
+    {title: 'Spiderpan', duration: 122, categories: ['aventura', 'acción']},
+    {title: 'Solo en Whatsapp', duration: 223, categories: ['comedia', 'thriller']},
+    {title: 'El gato con guantes', duration: 111, categories: ['comedia', 'aventura', 'animación']},
+]
+```
 
 **Iteración #2: Mix Fors**
 
 Dado el siguiente javascript usa forof y forin para hacer la media del volumen de todos los sonidos favoritos que tienen los usuarios.
 
 ```jsx
-  const users = [
+const users = [
     {name: 'Manolo el del bombo',
         favoritesSounds: {
             waves: {format: 'mp3', volume: 50},
@@ -45,7 +46,8 @@ Dado el siguiente javascript usa forof y forin para hacer la media del volumen d
             firecamp: {format: 'mp3', volume: 60},
         }
     },
-]```
+]
+```
 
 **Iteración #3: Mix Fors**
 
@@ -94,16 +96,18 @@ Crea una función llamada `findArrayIndex` que reciba como parametros un array d
 Sugerencia de función:
 
 ```jsx
-  function findArrayIndex(array, text) {}```
+function findArrayIndex(array, text) {}
+```
 
 Ej array:
 
 ```jsx
-  ['Caracol', 'Mosquito', 'Salamandra', 'Ajolote']```
+['Caracol', 'Mosquito', 'Salamandra', 'Ajolote']
+```
 
 **Iteración #5: Función rollDice**
 
-Crea una función llamada `rollDice()` que reciba como parametro el numero de caras que queramos que tenga el dado que deberá silumar el codigo dentro de la función. Como hemos dicho, que la función use el parametro para simular una tirada de dado y retornar el resultado. Si no se te ocurre como hacer un numero aleatorio no te preocupes! busca información sobre la función de javascript `Math.random();`
+Crea una función llamada **rollDice()** que reciba como parametro el numero de caras que queramos que tenga el dado que deberá silumar el codigo dentro de la función. Como hemos dicho, que la función use el parametro para simular una tirada de dado y retornar el resultado. Si no se te ocurre como hacer un numero aleatorio no te preocupes! busca información sobre la función de javascript **Math.random();**
 
 **Iteración #6: Función swap**
 
@@ -112,4 +116,6 @@ Crea una función llamada `swap()` que reciba un array y dos parametros que sean
 Sugerencia de array:
 
 ```jsx
-['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño']```
+['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño']
+
+```
