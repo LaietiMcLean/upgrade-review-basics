@@ -52,7 +52,8 @@ Una vez accedas a ellos piensa en la mejor forma de hacer un conteo de cada vez 
 
 Este ejercicio es un poco complicado con los conocimientos actuales pero...a la vez un buen reto y oportunidad para comprender que hay muchas formas de hacer las cosas en javascript.
 
-`const users = [
+```jsx
+const users = [
     {name: 'Manolo el del bombo',
         favoritesSounds: {
             waves: {format: 'mp3', volume: 50},
@@ -81,7 +82,8 @@ Este ejercicio es un poco complicado con los conocimientos actuales pero...a la 
             firecamp: {format: 'mp3', volume: 60},
         }
     },
-]`
+]
+```
 
 **Iteración #4: Métodos findArrayIndex**
 
