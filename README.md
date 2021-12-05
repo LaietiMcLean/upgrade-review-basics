@@ -1,20 +1,20 @@
 # upgrade-review-basics
 **Iteración #1: Mix for e includes**
 
-Dado el siguiente javascript usa forof para recorrer el array de películas, genera un nuevo array con las categorías de las películas e imprime por consola el array de categorías. Ten en cuenta que las categorías no deberían repetirse. Para filtrar las categorías puedes ayudarte de la función **.includes()**
+Dado el siguiente javascript usa forof para recorrer el array de películas, genera un nuevo array con las categorías de las películas e imprime por consola el array de categorías. Ten en cuenta que las categorías no deberían repetirse. Para filtrar las categorías puedes ayudarte de la función `.includes()`
 
-  const movies = [
+  `const movies = [
       {title: 'Madaraspar', duration: 192, categories: ['comedia', 'aventura']},
       {title: 'Spiderpan', duration: 122, categories: ['aventura', 'acción']},
       {title: 'Solo en Whatsapp', duration: 223, categories: ['comedia', 'thriller']},
       {title: 'El gato con guantes', duration: 111, categories: ['comedia', 'aventura', 'animación']},
-  ]
+  ]`
 
 **Iteración #2: Mix Fors**
 
 Dado el siguiente javascript usa forof y forin para hacer la media del volumen de todos los sonidos favoritos que tienen los usuarios.
 
-const users = [
+`const users = [
     {name: 'Manolo el del bombo',
         favoritesSounds: {
             waves: {format: 'mp3', volume: 50},
@@ -43,7 +43,7 @@ const users = [
             firecamp: {format: 'mp3', volume: 60},
         }
     },
-]
+]`
 
 **Iteración #3: Mix Fors**
 
@@ -52,7 +52,7 @@ Una vez accedas a ellos piensa en la mejor forma de hacer un conteo de cada vez 
 
 Este ejercicio es un poco complicado con los conocimientos actuales pero...a la vez un buen reto y oportunidad para comprender que hay muchas formas de hacer las cosas en javascript.
 
-const users = [
+`const users = [
     {name: 'Manolo el del bombo',
         favoritesSounds: {
             waves: {format: 'mp3', volume: 50},
@@ -81,7 +81,7 @@ const users = [
             firecamp: {format: 'mp3', volume: 60},
         }
     },
-]
+]`
 
 **Iteración #4: Métodos findArrayIndex**
 
@@ -89,11 +89,11 @@ Crea una función llamada `findArrayIndex` que reciba como parametros un array d
 
 Sugerencia de función:
 
-  function findArrayIndex(array, text) {}
+  `function findArrayIndex(array, text) {}`
 
 Ej array:
 
-  ['Caracol', 'Mosquito', 'Salamandra', 'Ajolote']
+  `['Caracol', 'Mosquito', 'Salamandra', 'Ajolote']`
 
 **Iteración #5: Función rollDice**
 
