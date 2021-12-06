@@ -72,8 +72,6 @@ var xShower = 0;
 var xTrain = 0;
 var xWind = 0;
 var x = 0;
-var sumTotal= 0;
-var media = 0;
 
 for (var nombre in users) {
     sounds=[];
@@ -86,37 +84,104 @@ for (var nombre in users) {
     x=0;
 
   let props = users[nombre].favoritesSounds;
-  
+
     if (props.hasOwnProperty("waves")){
-      xWaves = xWaves + props.waves.volume;
-      sounds.push(xWaves);
+        xWaves = xWaves + props.waves.volume;
+        sounds.push(xWaves);
     } if (props.hasOwnProperty("rain")){
-    xRain = xRain + props.rain.volume;
-    sounds.push(xRain);
+        xRain = xRain + props.rain.volume;
+        sounds.push(xRain);
     } if (props.hasOwnProperty("firecamp")){
-    xFirecamp = xFirecamp + props.firecamp.volume;
-    sounds.push(xFirecamp);
+        xFirecamp = xFirecamp + props.firecamp.volume;
+        sounds.push(xFirecamp);
     } if (props.hasOwnProperty("shower")){
-    xShower = xShower + props.shower.volume;
-    sounds.push(xShower);
+        xShower = xShower + props.shower.volume;
+        sounds.push(xShower);
     } if (props.hasOwnProperty("train")){
-    xTrain = xTrain + props.train.volume;
-    sounds.push(xTrain);
+        xTrain = xTrain + props.train.volume;
+        sounds.push(xTrain);
     } if (props.hasOwnProperty("wind")){
-    xWind = xWind + props.wind.volume;
-    sounds.push(xWind);
+        xWind = xWind + props.wind.volume;
+        sounds.push(xWind);
     }
 
     for (let vol of sounds){
     x = x + vol;
     }
-        console.log("La media de volumen de "+ users[nombre].name + " es: " + (x/3));
+        console.log("La media de volumen de " + users[nombre].name + " es: " + (x/3));
     }
 
 
+//Iteración 3
+const users2 = [
+    {name: 'Manolo el del bombo',
+        favoritesSounds: {
+            waves: {format: 'mp3', volume: 50},
+            rain: {format: 'ogg', volume: 60},
+            firecamp: {format: 'mp3', volume: 80},
+        }
+    },
+    {name: 'Mortadelo',
+        favoritesSounds: {
+            waves: {format: 'mp3', volume: 30},
+            shower: {format: 'ogg', volume: 55},
+            train: {format: 'mp3', volume: 60},
+        }
+    },
+    {name: 'Super Lopez',
+        favoritesSounds: {
+            shower: {format: 'mp3', volume: 50},
+            train: {format: 'ogg', volume: 60},
+            firecamp: {format: 'mp3', volume: 80},
+        }
+    },
+    {name: 'El culebra',
+        favoritesSounds: {
+            waves: {format: 'mp3', volume: 67},
+            wind: {format: 'ogg', volume: 35},
+            firecamp: {format: 'mp3', volume: 60},
+        }
+    },
+]
+
+var sounds = [];
+var xWaves = 0;
+var xRain = 0;
+var xFirecamp = 0;
+var xShower = 0;
+var xTrain = 0;
+var xWind = 0;
+var x = 0;
+
+for (var nombre in users) {
+
+  let props = users[nombre].favoritesSounds;
+
+    if (props.hasOwnProperty("waves")){
+        xWaves = xWaves +1;
+    } if (props.hasOwnProperty("rain")){
+        xRain = xRain + 1;
+    } if (props.hasOwnProperty("firecamp")){
+        xFirecamp = xFirecamp + 1;
+    } if (props.hasOwnProperty("shower")){
+        xShower = xShower + 1;
+    } if (props.hasOwnProperty("train")){
+        xTrain = xTrain + 1;
+    } if (props.hasOwnProperty("wind")){
+        xWind = xWind + 1;
+    }
+
+}
+
+    console.log("El sonido 'waves' ha sido añadido como favorito " + xWaves + " veces.");
+    console.log("El sonido 'rain' ha sido añadido como favorito " + xRain + " veces.");
+    console.log("El sonido 'shower' ha sido añadido como favorito " + xShower + " veces.");
+    console.log("El sonido 'firecamp' ha sido añadido como favorito " + xFirecamp + " veces.");
+    console.log("El sonido 'train' ha sido añadido como favorito " + xTrain + " veces.");
+    console.log("El sonido 'wind' ha sido añadido como favorito " + xWind + " veces.");
 
 
-
+    
 
 
 
