@@ -205,3 +205,13 @@ const text4 = "Ajolote";
 
     let prueba1 = findArrayIndex(arrayyy, text3);
     console.log(prueba1);
+
+    
+    //Iteración 5
+    function rollDice(min, max) {
+        let aleatorio = Math.floor(Math.random() * max) + min;
+        console.log(aleatorio);
+    }
+
+    rollDice(1, 6);
+
