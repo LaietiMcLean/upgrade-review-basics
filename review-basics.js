@@ -206,12 +206,30 @@ const text4 = "Ajolote";
     let prueba1 = findArrayIndex(arrayyy, text3);
     console.log(prueba1);
 
-    
-    //Iteración 5
+
+//Iteración 5
     function rollDice(min, max) {
         let aleatorio = Math.floor(Math.random() * max) + min;
         console.log(aleatorio);
     }
 
-    rollDice(1, 6);
+    rollDice(1, 6); //Funciona
 
+//Iteración 6 
+const array1 = [
+    'Mesirve', 
+    'Cristiano Romualdo', 
+    'Fernando Muralla', 
+    'Ronalguiño'
+]
+
+function swap (array, x, y) {
+    let primero = array[x];
+    array[x] = array[y];
+    array[y] = primero;
+    //array[y] = array[y];
+    return array;
+}
+
+let swapping = swap(array1, 1, 3); //Funciona
+console.log(swapping);
