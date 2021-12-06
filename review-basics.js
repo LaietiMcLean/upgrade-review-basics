@@ -181,7 +181,27 @@ for (var nombre in users) {
     console.log("El sonido 'wind' ha sido añadido como favorito " + xWind + " veces.");
 
 
-    
+//Iteración 4
+const arrayyy = [
+    'Caracol', 
+    'Mosquito', 
+    'Salamandra', 
+    'Ajolote'
+]
 
+const text1 = "Caracol";
+const text2 = "Mosquito";
+const text3 = "Salamandra";
+const text4 = "Ajolote";
 
+    function findArrayIndex(array, text) {
+        for (var i = 0; i < array.length; i++) {
+            if (array[i] == text) {
+                return i;
+                break;
+            }
+        }
+    }
 
+    let prueba1 = findArrayIndex(arrayyy, text3);
+    console.log(prueba1);
